@@ -36,6 +36,7 @@
 <li><a href="{{ url_for('drip', numbytes=5, duration=5, code=200) }}"><code>/drip?numbytes=n&amp;duration=s&amp;delay=s&amp;code=code</code></a> Drips data over a duration after an optional initial delay, then (optionally) returns with the given status code.</li>
 <li><a href="{{ url_for('range_request', numbytes=1024) }}"><code>/range/1024?duration=s&amp;chunk_size=code</code></a> Streams <em>n</em> bytes, and allows specifying a <em>Range</em> header to select a subset of the data. Accepts a <em>chunk_size</em> and request <em>duration</em> parameter.</li>
 <li><a href="{{ url_for('view_html_page') }}" data-bare-link="true"><code>/html</code></a> Renders an HTML Page.</li>
+<li><a href="{{ url_for('view_broken_html_page') }}" data-bare-link="true"><code>/html</code></a> Renders an HTML Page with a broken link.</li>
 <li><a href="{{ url_for('view_robots_page') }}" data-bare-link="true"><code>/robots.txt</code></a> Returns some robots.txt rules.</li>
 <li><a href="{{ url_for('view_deny_page') }}" data-bare-link="true"><code>/deny</code></a> Denied by robots.txt file.</li>
 <li><a href="{{ url_for('cache') }}" data-bare-link="true"><code>/cache</code></a> Returns 200 unless an If-Modified-Since or If-None-Match header is provided, when it returns a 304.</li>

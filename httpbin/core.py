@@ -104,11 +104,16 @@ def view_html_page():
     return render_template('moby.html')
 
 @app.route('/broken_link')
-def view_broken_html_page():
+def view_brokenlink_html_page():
     """Simple broken_link Page"""
 
     return render_template('broken_link.html')
 
+@app.route('/missingdns_link')
+def view_missingdns_html_page():
+    """Simple broken_link Page"""
+
+    return render_template('misingdns_link.html')
 
 @app.route('/robots.txt')
 def view_robots_page():
